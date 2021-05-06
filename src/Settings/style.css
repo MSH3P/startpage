@@ -1,0 +1,44 @@
+.SettingsContainer {
+    position: absolute;
+    bottom: 4.5%;
+    right: -250px;
+    width: 200px;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #fff5c4;
+    text-align: center;
+}
+
+.SlideIn {
+    animation: slideIn 0.5s forwards;
+}
+.SlideOut {
+    animation: slideOut 0.5s forwards;
+}
+.Hidden {
+    visibility: hidden;
+}
+
+.Title {
+    margin: 0;
+    color: #fff5c4;
+    font-family: OpenSansRegular;
+    /* border-bottom: 1px solid #fff5c4; */
+}
+
+@keyframes slideIn {
+    100% {
+        right: 5px;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        right: 0;
+    }
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.ttf');
+}

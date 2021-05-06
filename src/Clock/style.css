@@ -1,0 +1,8 @@
+#Clock {
+    left: 0.75%;
+    width: 23%;
+    height: 100px;
+
+    background-color: rgba(15, 15, 15, 0.5);
+    position: relative;
+}

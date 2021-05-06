@@ -1,0 +1,7 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+.MainAppContainer {
+    display: flex;
+}

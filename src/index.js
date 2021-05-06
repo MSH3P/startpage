@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Background from './Background';
+import Content from './Content';
+//import Clock from './Clock';
+import Settings from './Settings';
+import './style.css';
+import Taskbar from './Taskbar';
+import SettingsContext from './Contexts';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+    const [show, setShow] = useState('Hidden');
+    return (
+        <SettingsContext.Provider value={{ show: show, setShow: setShow }}>
+            <div className="MainAppContainer">
+                <Background />
+                <Content />
+                <Settings />
+                <Taskbar />
+            </div>
+        </SettingsContext.Provider>
+    );
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App />, document.getElementById('root'));

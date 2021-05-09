@@ -18,6 +18,28 @@
 .Hidden {
     visibility: hidden;
 }
+.BottomContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.TopContainer {
+}
+.SettingsButton {
+    border: 1px solid #fff5c4;
+
+    color: #fff5c4;
+    font-family: OpenSansRegular;
+    background-color: rgba(0, 0, 0, 0);
+    width: 35%;
+}
+.SettingsInput {
+    border: 1px solid #fff5c4;
+    color: #fff5c4;
+    font-family: OpenSansRegular;
+    background-color: rgba(0, 0, 0, 0);
+}
 
 .Title {
     margin: 0;

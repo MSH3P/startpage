@@ -1,66 +1,69 @@
 .SettingsContainer {
-    position: absolute;
-    bottom: 4.5%;
-    right: -250px;
-    width: 200px;
+  position: absolute;
+  bottom: 4.5%;
+  right: -250px;
+  width: 200px;
 
-    background-color: rgba(0, 0, 0, 0.75);
-    border: 1px solid #fff5c4;
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid #fff5c4;
+  text-align: center;
 }
 
 .SlideIn {
-    animation: slideIn 0.5s forwards;
+  animation: slideIn 0.5s forwards;
 }
 .SlideOut {
-    animation: slideOut 0.5s forwards;
+  animation: slideOut 0.5s forwards;
 }
 .Hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 .BottomContainer {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .TopContainer {
 }
+.SettingsButton:hover {
+  background-color: rgba(79, 76, 62, 0.5);
+}
 .SettingsButton {
-    border: 1px solid #fff5c4;
+  border: 1px solid #fff5c4;
 
-    color: #fff5c4;
-    font-family: OpenSansRegular;
-    background-color: rgba(0, 0, 0, 0);
-    width: 35%;
+  color: #fff5c4;
+  font-family: OpenSansRegular;
+  background-color: rgba(0, 0, 0, 0);
+  width: 35%;
 }
 .SettingsInput {
-    border: 1px solid #fff5c4;
-    color: #fff5c4;
-    font-family: OpenSansRegular;
-    background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff5c4;
+  color: #fff5c4;
+  font-family: OpenSansRegular;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .Title {
-    margin: 0;
-    color: #fff5c4;
-    font-family: OpenSansRegular;
-    /* border-bottom: 1px solid #fff5c4; */
+  margin: 0;
+  color: #fff5c4;
+  font-family: OpenSansRegular;
+  /* border-bottom: 1px solid #fff5c4; */
 }
 
 @keyframes slideIn {
-    100% {
-        right: 5px;
-    }
+  100% {
+    right: 5px;
+  }
 }
 
 @keyframes slideOut {
-    0% {
-        right: 0;
-    }
+  0% {
+    right: 0;
+  }
 }
 
 @font-face {
-    font-family: 'OpenSansRegular';
-    src: url('../fonts/OpenSansRegular.ttf');
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/OpenSansRegular.ttf');
 }

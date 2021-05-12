@@ -1,42 +1,42 @@
 .Taskbar {
-    position: absolute;
-    display: flex;
-    bottom: 0%;
-    left: 0;
-    background-color: rgba(15, 15, 15, 0.75);
-    height: 4%;
-    width: 100%;
-    border-top: 1px solid #fff5c4;
+  position: absolute;
+  display: flex;
+  bottom: 0%;
+  left: 0;
+  background-color: rgba(15, 15, 15, 0.75);
+  height: 4%;
+  width: 100%;
+  border-top: 1px solid #fff5c4;
 }
 
 .TaskbarButtonDiv {
-    display: inline-block;
-    height: 100%;
+  display: inline-block;
+  height: 100%;
 }
 
 .SvgButton {
-    height: 100%;
-    outline: 0;
-    border: none;
-    background-color: transparent;
+  height: 100%;
+  outline: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .CenterDiv {
-    height: 100%;
-    width: 50%;
-    background-color: transparent;
+  height: 100%;
+  width: 50%;
+  background-color: transparent;
 }
 .MiddleDiv {
-    width: 100%;
-    background-color: transparent;
+  width: 100%;
+  background-color: transparent;
 }
 
 #AddButton {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 #SettingsButton {
-    padding-right: 4%;
-    display: flex;
-    justify-content: flex-end;
+  padding-right: 4%;
+  display: flex;
+  justify-content: flex-end;
 }

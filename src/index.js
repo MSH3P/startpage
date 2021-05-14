@@ -14,10 +14,15 @@ const App = () => {
   return (
     <SettingsContextProvider>
       <div className="MainAppContainer">
-        <Background />
-        <Content />
-        <Settings showState={{ show, setShow }} />
-        <Taskbar showState={{ show, setShow }} />
+        <div className="BackgroundContainer">
+          <Background />
+        </div>
+
+        <div className="ContentContainer">
+          <Content />
+          <Settings showState={{ show, setShow }} />
+          <Taskbar showState={{ show, setShow }} />
+        </div>
       </div>
     </SettingsContextProvider>
   );

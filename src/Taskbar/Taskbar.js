@@ -41,7 +41,6 @@ const Taskbar = (props) => {
             props.showState.setShow(props.showState.show === 'SlideIn' ? 'SlideOut' : 'SlideIn');
           }}
         />
-        )}
       </div>
     </div>
   );

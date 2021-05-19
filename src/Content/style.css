@@ -1,24 +1,18 @@
 #Content {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 8%;
-    left: 0;
-    width: 50%;
-    height: 100%;
-
-    box-shadow: -1px 0px 0px 0px #fff5c4, 1px 0px 0px 0px #fff5c4;
-    background-color: rgba(15, 15, 15, 0.75);
-    animation-name: expand;
-    animation-duration: 2s;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+  box-shadow: -1px 0px 0px 0px #fff5c4, 1px 0px 0px 0px #fff5c4;
+  background-color: rgba(15, 15, 15, 0.75);
+  animation-name: expand;
+  animation-duration: 2s;
 }
 
 @keyframes expand {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 50%;
-    }
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
 }

@@ -29,7 +29,14 @@ const Taskbar = (props) => {
       <div className="CenterDiv"></div>
       <div className="MiddleDiv">
         <div className="CenterDiv">
-          <TaskbarButton svg={Add} id="AddButton" />
+          <TaskbarButton
+            svg={Add}
+            id="AddButton"
+            onClick={() => {
+              props.displayType.setDisplayType('ProfileSettings');
+              props.displayState.setDisplay(props.displayState.display === 'SlideInVerticalTop' ? 'SlideOutVerticalTop' : 'SlideInVerticalTop');
+            }}
+          />
         </div>
         <div className="CenterDiv"></div>
       </div>
@@ -38,7 +45,10 @@ const Taskbar = (props) => {
           svg={Settings}
           id="SettingsButton"
           onClick={() => {
-            props.showState.setShow(props.showState.show === 'SlideIn' ? 'SlideOut' : 'SlideIn');
+            props.displayType.setDisplayType('Settings');
+            props.displayState.setDisplay(
+              props.displayState.display === 'SlideInHorizontalRight' ? 'SlideOutHorizontalRight' : 'SlideInHorizontalRight'
+            );
           }}
         />
       </div>

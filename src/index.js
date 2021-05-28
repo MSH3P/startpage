@@ -9,7 +9,8 @@ import Taskbar from './Taskbar/';
 import { SettingsContextProvider } from './Contexts/';
 
 const App = () => {
-  const [show, setShow] = React.useState('Hidden');
+  const [displayType, setDisplayType] = React.useState(null);
+  const [display, setDisplay] = React.useState('Hidden');
 
   return (
     <SettingsContextProvider>
@@ -20,8 +21,8 @@ const App = () => {
 
         <div className="ContentContainer">
           <Content />
-          <Settings showState={{ show, setShow }} />
-          <Taskbar showState={{ show, setShow }} />
+          <Settings displayState={{ display, setDisplay }} displayType={{ displayType, setDisplayType }} />
+          <Taskbar displayState={{ display, setDisplay }} displayType={{ displayType, setDisplayType }} />
         </div>
       </div>
     </SettingsContextProvider>
